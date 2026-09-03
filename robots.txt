@@ -1,0 +1,6 @@
+# robots.txt — SolBemol
+User-agent: *
+Allow: /
+
+# Ubicación del sitemap (actualiza el dominio cuando esté definitivo)
+Sitemap: https://www.solbemol.cl/sitemap.xml

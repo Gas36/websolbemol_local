@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============ SEO BÁSICO ============ -->
+  <title>SolBemol — Talleres de música para empresas</title>
+  <meta name="description" content="SolBemol lleva talleres de música a tu empresa: clases semanales de 60 minutos, sin exámenes ni presión de nivel, que terminan en un escenario. Bienestar real para tu equipo, sin carga para RRHH.">
+  <link rel="canonical" href="https://www.solbemol.cl/">
+  <meta name="theme-color" content="#1B1C28">
+
+  <!-- ============ OPEN GRAPH ============ -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CL">
+  <meta property="og:site_name" content="SolBemol">
+  <meta property="og:title" content="SolBemol — Talleres de música para empresas">
+  <meta property="og:description" content="Clases de música en tu empresa, en horario de almuerzo o salida. Sin presión de nivel. El único programa de bienestar que termina en un escenario.">
+  <meta property="og:url" content="https://www.solbemol.cl/">
+  <!-- TODO: reemplazar por una imagen social real 1200x630 en assets/og-image.jpg -->
+  <meta property="og:image" content="https://www.solbemol.cl/assets/og-image.jpg">
+  <meta property="og:image:alt" content="Personas de una empresa tocando música juntas en un taller de SolBemol">
+
+  <!-- ============ TWITTER CARDS ============ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SolBemol — Talleres de música para empresas">
+  <meta name="twitter:description" content="Clases de música en tu empresa que terminan en un escenario. Alta participación, cero carga para RRHH.">
+  <meta name="twitter:image" content="https://www.solbemol.cl/assets/og-image.jpg">
+
+  <!-- ============ FAVICON ============ -->
+  <link rel="icon" type="image/svg+xml" href="assets/SVG/Favicon.svg">
+
+  <!-- ============ FUENTES (Google Fonts) ============ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Jost:wght@500;600;700&family=Noto+Music&display=swap" rel="stylesheet">
+
+  <!-- ============ ESTILOS ============ -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- ============ DATOS ESTRUCTURADOS (Schema.org) ============ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "SolBemol",
+    "description": "Talleres de música para empresas: clases semanales presenciales que terminan en un escenario, sin carga administrativa para Recursos Humanos.",
+    "url": "https://www.solbemol.cl/",
+    "logo": "https://www.solbemol.cl/assets/SVG/Logo_negro.svg",
+    "image": "https://www.solbemol.cl/assets/og-image.jpg",
+    "slogan": "Démosle un lugar a la música en tu empresa.",
+    "areaServed": { "@type": "Country", "name": "Chile" },
+    "knowsAbout": ["Talleres de música", "Bienestar corporativo", "Piano", "Guitarra", "Ukelele", "Canto", "Banda"],
+    "contactPoint": { "@type": "ContactPoint", "contactType": "Ventas", "availableLanguage": ["es"] }
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#inicio">Saltar al contenido</a>
+
+  <!-- ============================================================
+       HEADER — transparente, logo centrado, auto-oculto.
+       Reaparece al acercar el mouse al borde superior (ver main.js).
+       ============================================================ -->
+  <header class="site-header" id="top" data-header>
+    <div class="container site-header__inner">
+      <span class="site-header__side site-header__side--left">Música en tu empresa</span>
+
+      <a class="site-header__logo" href="#inicio" aria-label="SolBemol — inicio">
+        <img src="assets/SVG/logo_blanco.svg" alt="Logotipo de SolBemol" width="180" height="34">
+      </a>
+
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Panel de navegación (se abre con la hamburguesa) -->
+  <div class="nav-backdrop" data-nav-backdrop hidden></div>
+  <nav class="nav" id="primary-nav" aria-label="Navegación principal" data-nav>
+    <p class="nav__title">Explorar</p>
+    <ul class="nav__list">
+      <li><a class="nav__link" href="#inicio">Inicio</a></li>
+      <li><a class="nav__link" href="#solucion">El taller</a></li>
+      <li><a class="nav__link" href="#historias">Historias</a></li>
+      <li><a class="nav__link" href="#empresa">Para tu empresa</a></li>
+      <li><a class="nav__link" href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main id="inicio">
+
+    <!-- ============================================================
+         HERO — atmósfera oscura (imagen) · acento terracota
+         ============================================================ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__bg">
+        <!-- Video de fondo servido por Mux (HLS) vía el componente <mux-video>.
+             El poster es la miniatura que Mux genera del propio video. -->
+        <mux-video
+          playback-id="7Ho8yKtlHPvt02x4MYSXSvAT02b4MHjabpKBWC6hgooK4"
+          muted autoplay loop playsinline preload="auto"
+          poster="https://image.mux.com/7Ho8yKtlHPvt02x4MYSXSvAT02b4MHjabpKBWC6hgooK4/thumbnail.jpg?time=1">
+        </mux-video>
+      </div>
+      <div class="hero__overlay"></div>
+
+      <div class="container hero__content">
+        <span class="hero__eyebrow">Talleres de música para empresas</span>
+        <h1 class="hero__title" id="hero-title">
+          <span class="hero__line">La música no se fue.</span>
+          <span class="hero__line hero__line--accent">Solo le faltaba un lugar.</span>
+        </h1>
+        <p class="hero__subtitle">Y ese lugar puede estar dentro de tu empresa.<span class="note" aria-hidden="true"> ♪</span></p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#contacto">Cuéntanos de tu equipo</a>
+          <a class="btn btn--ghost" href="#solucion">Cómo funciona</a>
+        </div>
+        <p class="hero__instruments">
+          <span>Piano</span> · <span>Guitarra</span> · <span>Ukelele</span> · <span>Canto</span> · <span>Banda</span> · <span>y más</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROBLEMA (HUMANO) — atmósfera blanca · sin acento cromático
+         ============================================================ -->
+    <section class="section atmos-white accent-none" id="problema" aria-labelledby="problema-title">
+      <div class="container container--narrow reveal">
+        <div class="section__head">
+          <span class="section__eyebrow">El punto de partida</span>
+          <h2 class="section__title" id="problema-title">La música quedó en el camino.</h2>
+        </div>
+        <div class="prose">
+          <p>A los 7 años, casi todos quisimos aprender a tocar algo. La vida adulta lo fue postergando: el trabajo, los compromisos, la sensación de que ya es tarde.</p>
+          <p>No es falta de ganas. Es falta de espacio y de una razón concreta para empezar.</p>
+          <p class="pivot">¿Y si ese espacio pudiera ser dentro de tu empresa?</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SOLUCIÓN — atmósfera crema · acento salvia
+         ============================================================ -->
+    <section class="section atmos-cream accent-salvia" id="solucion" aria-labelledby="solucion-title">
+      <div class="container reveal">
+        <div class="section__head">
+          <span class="section__eyebrow">La solución</span>
+          <h2 class="section__title" id="solucion-title">Un taller de música que llega a donde estás.</h2>
+          <p class="section__intro">SolBemol lleva clases directamente a la empresa, en horario de almuerzo o salida. Sin examen al final. Sin presión de nivel. Solo música, compañeros y el gusto de tocar algo real.</p>
+        </div>
+
+        <div class="grid-features">
+          <div class="feature">
+            <div class="feature__num">01</div>
+            <h3>En tu empresa</h3>
+            <p>Clases presenciales en horario de almuerzo o salida, donde tu equipo ya está.</p>
+          </div>
+          <div class="feature">
+            <div class="feature__num">02</div>
+            <h3>Sin presión</h3>
+            <p>Sin examen al final y sin presión de nivel. Cada quien avanza a su ritmo.</p>
+          </div>
+          <div class="feature">
+            <div class="feature__num">03</div>
+            <h3>Música real</h3>
+            <p>Música, compañeros y el gusto de tocar algo propio desde el primer día.</p>
+          </div>
+        </div>
+
+        <ul class="chips" aria-label="Instrumentos disponibles">
+          <li>Piano</li><li>Guitarra</li><li>Ukelele</li><li>Canto</li><li>Banda</li><li>y más</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="keys-divider" role="presentation" aria-hidden="true"></div>
+
+    <!-- ============================================================
+         HISTORIAS (personas reales) — atmósfera índigo · acento arena
+         ============================================================ -->
+    <section class="section atmos-indigo accent-arena" id="historias" aria-labelledby="historias-title">
+      <div class="container reveal">
+        <div class="section__head">
+          <span class="section__eyebrow">Personas reales, resultados reales</span>
+          <h2 class="section__title" id="historias-title">La música vuelve a ser parte de quiénes son.</h2>
+        </div>
+
+        <div class="stories">
+          <article class="story">
+            <span class="story__tag">El constante</span>
+            <p class="story__name">Braulio</p>
+            <p class="story__intro">Nunca había tocado un instrumento. Hoy tiene un piano en su casa y busca acordes y canciones por su cuenta.</p>
+            <blockquote>“Aquella vez que me di cuenta que estaba entendiendo la música, en casa pude buscar acordes y producir algo que nació de mí. Reconocí una melodía, la busqué y pude hacerlo.”</blockquote>
+          </article>
+
+          <article class="story">
+            <span class="story__tag">El alma de la fiesta</span>
+            <p class="story__name">Juan Carlos</p>
+            <p class="story__intro">Músico de corazón. El taller le dio el escenario que quería y compañeros con quienes compartir algo más que reuniones.</p>
+            <blockquote>“No podría vivir sin música. Cuando empiezas a aprenderla, encuentras algo distinto a solo escucharla: entenderla y sentirla.”</blockquote>
+          </article>
+        </div>
+
+        <p class="stories-close">Una hora a la semana, y la música vuelve a ser parte de quiénes son.</p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PUENTE A LA EMPRESA (bisagra) — atmósfera blanca · sin acento
+         ============================================================ -->
+    <section class="section atmos-white accent-none" id="empresa" aria-labelledby="empresa-title">
+      <div class="container reveal">
+        <div class="section__head">
+          <span class="section__eyebrow">Para tu empresa</span>
+          <h2 class="section__title" id="empresa-title">Simple para la empresa. Significativo para las personas.</h2>
+          <p class="section__intro">Todo esto ocurre sin que RRHH tenga que gestionarlo. SolBemol se encarga de la logística de principio a fin.</p>
+        </div>
+
+        <ul class="checklist">
+          <li>SolBemol coordina espacio, instrumentos y horarios.</li>
+          <li>Clases semanales de 60 minutos.</li>
+          <li>Una factura mensual, sin fricciones.</li>
+          <li>Y para eventos, la banda toca en vivo.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         DIFERENCIADOR — atmósfera negra (tinta) · acento terracota
+         ============================================================ -->
+    <section class="section atmos-ink accent-terracota" id="diferenciador" aria-labelledby="dif-title">
+      <div class="container container--narrow reveal">
+        <div class="section__head">
+          <span class="section__eyebrow">El diferenciador</span>
+          <h2 class="section__title" id="dif-title">El único programa que termina en un escenario.</h2>
+        </div>
+        <div class="prose">
+          <p>Hay proveedores de wellness que trabajan con música: algunos la usan para hablar de liderazgo, otros hacen percusión como team building.</p>
+          <p>SolBemol es diferente: no usa la música como herramienta para otra cosa.</p>
+          <p class="pivot">La música es el fin.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         POR QUÉ LE IMPORTA A RRHH — atmósfera crema · sin acento
+         ============================================================ -->
+    <section class="section atmos-cream accent-none" id="rrhh" aria-labelledby="rrhh-title">
+      <div class="container reveal">
+        <div class="section__head">
+          <span class="section__eyebrow">Por qué le importa a RRHH</span>
+          <h2 class="section__title" id="rrhh-title">Cuatro razones para decir que sí.</h2>
+        </div>
+
+        <ul class="checklist">
+          <li>Alta participación.</li>
+          <li>Resultado visible en el evento de fin de año.</li>
+          <li>Cero carga administrativa.</li>
+          <li>Un sello que casi ninguna empresa tiene.</li>
+        </ul>
+
+        <figure class="pullquote">
+          <p>“Si funciona y no me complica, lo renuevo.”</p>
+          <cite>— Ivonne, RRHH Ultranav</cite>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CIERRE + FORMULARIO — atmósfera índigo · acento terracota
+         ============================================================ -->
+    <section class="section atmos-indigo accent-terracota" id="contacto" aria-labelledby="contacto-title">
+      <div class="container contact-grid reveal">
+        <div class="contact-intro">
+          <span class="section__eyebrow">Conversemos</span>
+          <h2 class="section__title" id="contacto-title">Démosle un lugar a la música en tu empresa.</h2>
+          <p class="section__intro">Cuéntanos de tu equipo y te mostramos cómo podría funcionar. Es más simple de lo que parece.</p>
+        </div>
+
+        <!-- El envío real de correo se conecta en WordPress vía WP Mail SMTP.
+             Aquí solo hay validación de front (ver js/main.js y README). -->
+        <form class="form" id="contact-form" novalidate>
+          <div class="form__row form__row--2">
+            <div class="field">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+              <span class="field__error" data-error-for="nombre"></span>
+            </div>
+            <div class="field">
+              <label for="empresa">Empresa <span class="opt">(opcional)</span></label>
+              <input type="text" id="empresa" name="empresa" autocomplete="organization">
+              <span class="field__error" data-error-for="empresa"></span>
+            </div>
+          </div>
+
+          <div class="form__row form__row--2">
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+              <span class="field__error" data-error-for="email"></span>
+            </div>
+            <div class="field">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" autocomplete="tel" inputmode="tel" required>
+              <span class="field__error" data-error-for="telefono"></span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Cuéntanos del equipo: cuántas personas, qué les gustaría tocar, horarios…"></textarea>
+            <span class="field__error" data-error-for="mensaje"></span>
+          </div>
+
+          <button type="submit" class="btn btn--primary form__submit">Enviar mensaje</button>
+          <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+          <p class="form__note">Al enviar aceptas que te contactemos por este medio. No compartimos tus datos.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER — (pendiente de rediseño; se deja como está por ahora)
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__brand">
+          <div class="site-footer__logo">
+            <img src="assets/SVG/logo_blanco.svg" alt="Logotipo de SolBemol" width="200" height="40">
+          </div>
+          <p class="site-footer__tagline">Démosle un lugar a la música en tu empresa.</p>
+        </div>
+
+        <nav aria-label="Navegación del pie de página">
+          <h3>Explorar</h3>
+          <ul class="site-footer__links">
+            <li><a href="#solucion">El taller</a></li>
+            <li><a href="#historias">Historias</a></li>
+            <li><a href="#empresa">Para tu empresa</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h3>Conversemos</h3>
+          <ul class="site-footer__links">
+            <li><a href="#contacto">Cuéntanos de tu equipo</a></li>
+            <li><a href="mailto:hola@solbemol.cl">hola@solbemol.cl</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <span>&copy; <span id="year"></span> SolBemol. Todos los derechos reservados.</span>
+        <span>Hecho con música en Chile.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Componente web de Mux para el video de fondo -->
+  <script defer src="https://cdn.jsdelivr.net/npm/@mux/mux-video@latest"></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
