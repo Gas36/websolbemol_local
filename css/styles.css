@@ -38,7 +38,7 @@
   --font-body:    'Instrument Sans', system-ui, -apple-system, Segoe UI, sans-serif;
 
   /* Escala tipográfica fluida */
-  --fs-hero:  clamp(2.4rem, 5.2vw, 4rem);
+  --fs-hero:  clamp(2.6rem, 6vw, 5.25rem);
   --fs-h2:    clamp(1.9rem, 4vw, 3rem);
   --fs-h3:    clamp(1.2rem, 2.2vw, 1.55rem);
   --fs-lead:  clamp(1.1rem, 1.6vw, 1.35rem);
@@ -260,11 +260,14 @@ body.nav-open { overflow: hidden; }
    ------------------------------------------------------------ */
 .hero {
   position: relative; min-height: 100svh;
-  display: flex; align-items: flex-end;
+  display: flex; align-items: center;
   color: #fff; overflow: hidden;
 }
 .hero__bg { position: absolute; inset: 0; z-index: 0; background: var(--c-ink); }
-.hero__bg img, .hero__bg mux-video, .hero__bg video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hero__bg img, .hero__bg video { width: 100%; height: 100%; object-fit: cover; display: block; }
+/* <mux-video> lleva el <video> en su interior: se cubre el espacio con la
+   variable propia de Mux (--media-object-fit), no con object-fit directo. */
+.hero__bg mux-video { display: block; width: 100%; height: 100%; --media-object-fit: cover; --media-object-position: center; }
 .hero__overlay {
   position: absolute; inset: 0; z-index: 1;
   /* Doble degradado: oscurece la izquierda (donde va el texto) y la banda
@@ -275,8 +278,24 @@ body.nav-open { overflow: hidden; }
 }
 .hero__content {
   position: relative; z-index: 2;
-  padding-block: var(--space-7) var(--space-6);
-  max-width: 900px;
+  padding-block: var(--space-6);
+  width: 100%;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: var(--space-5);
+}
+.hero__text { max-width: 700px; }
+
+/* Pictograma de marca (picto1) recoloreado con mask para poder resaltarlo
+   en el color que queramos; deja ver el video a su alrededor. */
+.hero__figure {
+  flex: 0 0 auto;
+  width: clamp(190px, 26vw, 360px);
+  color: var(--c-terracota); /* color del pictograma: cambiar aquí para recolorear */
+}
+.hero__figure .hero__picto { width: 100%; height: auto; display: block; }
+@media (max-width: 899px) {
+  .hero__content { flex-direction: column; align-items: flex-start; }
+  .hero__figure { display: none; }
 }
 .hero__eyebrow {
   font-family: var(--font-display); font-weight: 600; text-transform: uppercase;
@@ -289,7 +308,6 @@ body.nav-open { overflow: hidden; }
    en móvil puede envolver de forma natural por palabras. */
 .hero__line { display: block; }
 .hero__line--accent { color: var(--c-terracota); }
-@media (min-width: 720px) { .hero__line { white-space: nowrap; } }
 .hero__title .accent { color: var(--c-terracota); } /* compatibilidad */
 .hero__subtitle { font-size: var(--fs-lead); color: rgba(255,255,255,0.92); max-width: 46ch; margin-bottom: var(--space-4); }
 /* Nota musical al final de la bajada (glifo de Noto Music) */
